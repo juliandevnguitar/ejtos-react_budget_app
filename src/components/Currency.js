@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+import './Currency.css';
 
 export default function Currency() {
     const { currency, dispatch } = useContext(AppContext);
@@ -12,9 +13,10 @@ export default function Currency() {
     }
 
     return (
-        <div className='currency-dropdown' >
-        <label htmlFor="currency">{currency}</label> 
+        <div className='currency-dropdown'>
+        <label htmlFor="currency" className="dropdown-label">{currency}</label> 
         <select
+            
             required='required'
             type='text'
             id='cost'
