@@ -13,11 +13,12 @@ export default function Currency() {
     }
 
     return (
-        <div className='currency-dropdown'>
-        <label htmlFor="currency" className="dropdown-label">{currency}</label> 
+        
+       
         <select
-            
+            className='currency-dropdown'
             required='required'
+            placeholder="Currency"
             type='text'
             id='cost'
             name='currency'
@@ -29,7 +30,7 @@ export default function Currency() {
             <option value="€">€ Euro</option> 
             <option value="₹">₹ Ruppee</option>  
         </select>
-        </div>
+        
         
     )
 }
